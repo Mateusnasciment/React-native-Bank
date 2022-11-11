@@ -1,16 +1,15 @@
 import { StyleSheet, Text, View } from 'react-native';
+import { Balance } from "../../components/balance"
 
 export function Home() {
   return (
-    <View style={styles.container}>
-      <Text>Bem vindo Mateus</Text>
+    <View>
+      <Balance />
     </View>
   );
 }
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
-      backgroundColor: '#fff',
     },
   });
   

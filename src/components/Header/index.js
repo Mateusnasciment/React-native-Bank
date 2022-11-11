@@ -5,7 +5,7 @@ import {
     StatusBar,
     TouchableOpacity
 } from 'react-native'
-import { Entypo } from '@expo/vector-icons'
+import { Entypo, AntDesign,MaterialCommunityIcons } from '@expo/vector-icons'
 
 const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 64 ;
 
@@ -14,10 +14,11 @@ export function Header() {
         <View style={styles.container}>
             <View  style={styles.content}>
                 <Text style={styles.username}>
-                    Mateus nascimento
+                    Olá, Mateus nascimento
                 </Text>
                 <TouchableOpacity style={styles.buttonUser}>
-                    <Entypo name="user" size={24} color="black" />
+                    <AntDesign name="aliwangwang-o1" size={20} color="white" />
+                        <MaterialCommunityIcons name="email" size={20} color="white" />
                 </TouchableOpacity>
             </View>
         </View>
@@ -26,18 +27,18 @@ export function Header() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#8000FF',
+        backgroundColor: '#61329A',
         paddingTop: statusBarHeight,
         flexDirection: 'row',
-        paddingStart: 16,
-        paddingEnd: 16,
-        paddingBottom: 44
+        paddingStart: 10,
+        paddingEnd: 10,
+        paddingBottom: 20
     },
     content:{
         flex: 1,
         alignItems: 'center',
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     username:{
         fontSize: 20,
@@ -45,7 +46,10 @@ const styles = StyleSheet.create({
         fontWeight: 'bold'
     },
     buttonUser:{
-        width: 50,
-        height: 50
+        justifyContent: 'space-between',
+        flexWrap: 'wrap',
+        flexDirection: 'row',
+        width: 44,
+        height: 44
     }
 })
