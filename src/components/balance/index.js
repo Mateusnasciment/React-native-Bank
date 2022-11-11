@@ -31,10 +31,12 @@ const styles =StyleSheet.create({
         backgroundColor: '#ffff',
         flexDirection: 'row',
         justifyContent: 'space-between',
-        paddingStart: 18,
-        paddingEnd: 18,
+        paddingStart: 28,
+        paddingEnd: 28,
         marginTop: -24,
-        marginStart: 14,
-        marginEnd: 14,
+        marginStart: 10,
+        marginEnd: 15,
+        borderRadius: 8,
+        paddingBottom:  20,
     }
 })
