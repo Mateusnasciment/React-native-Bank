@@ -25,7 +25,6 @@ export function Header() {
                             <TouchableOpacity >
                                 <MaterialCommunityIcons name="email" size={23} color="white" />
                             </TouchableOpacity>
-
                 </View>
             </View>
         </View>
