@@ -6,7 +6,6 @@ import {
     TouchableOpacity
 } from 'react-native'
 import { Entypo, AntDesign,MaterialCommunityIcons } from '@expo/vector-icons'
-
 const statusBarHeight = StatusBar.currentHeight ? StatusBar.currentHeight + 22 : 64 ;
 
 export function Header() {
@@ -18,14 +17,15 @@ export function Header() {
                 </Text>
                 <View style={styles.buttonUser} >
                     <TouchableOpacity >
-                        <AntDesign name="aliwangwang-o1" size={18} color="white" />
+                        <AntDesign name="aliwangwang-o1" size={24} color="white" />
                     </TouchableOpacity>
                         <TouchableOpacity >
-                            <AntDesign name="github" size={18} color="white" />
+                            <AntDesign name="github" size={24} color="white" href="https://github.com/Mateusnasciment" />
                         </TouchableOpacity>
                             <TouchableOpacity >
-                                <MaterialCommunityIcons name="email" size={21} color="white" />
+                                <MaterialCommunityIcons name="email" size={23} color="white" />
                             </TouchableOpacity>
+
                 </View>
             </View>
         </View>

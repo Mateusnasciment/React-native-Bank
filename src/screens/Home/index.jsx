@@ -83,7 +83,7 @@ const styles = StyleSheet.create({
       marginTop: 20,
       fontSize: 20,
       fontWeight: 'bold',
-      color: '#0a0101',
+      color: '#070000',
       textAlign: 'center',
     }
 });

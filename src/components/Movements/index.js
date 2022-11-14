@@ -10,8 +10,8 @@ import { UsersIcon } from '@heroicons/react/24/solid';
 
 export function Movements({item}) {
     return (
-        <View>
-            <UsersIcon style={{width: 20, height: 20 }}/>
+        <View style={styles.container}>
+            <UsersIcon style={{ marginRight:20, width: 20, height: 20 }}/>
             <Text style={styles.title}>
                 {item.name}, 
                 {item.id},
@@ -24,11 +24,13 @@ export function Movements({item}) {
 }
 const styles = StyleSheet.create({
     title: {
-        display: 'flex',
         fontSize: 15,
         fontWeight: 'bold',
         color: 'black',
-        justifyContent: 'space-around',
     },
-
+    container: {
+        display: 'flex',
+        flexDirection: 'row',
+        textAlign: 'center',
+    },  
 })
