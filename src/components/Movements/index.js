@@ -3,25 +3,32 @@ import {
     View,
     Text,
     StyleSheet,
-    TouchableOpacity
+    TouchableOpacity,
+    FlatList
 } from 'react-native';
+import { UsersIcon } from '@heroicons/react/24/solid';
 
-export function Movements( { data }) {
+export function Movements({item}) {
     return (
-        <TouchableOpacity style={styles.container}>
-            <Text style={styles.date}>{data.date}</Text>
-            <View>
-            </View>
-        </TouchableOpacity>
-        
+        <View>
+            <UsersIcon style={{width: 20, height: 20 }}/>
+            <Text style={styles.title}>
+                {item.name}, 
+                {item.id},
+                {item.type},
+                {item.sexo},
+                {item.value},
+                </Text>
+        </View>
     );
 }
 const styles = StyleSheet.create({
-    container: {
-        
+    title: {
+        display: 'flex',
+        fontSize: 15,
+        fontWeight: 'bold',
+        color: 'black',
+        justifyContent: 'space-around',
     },
-    date: {
-        color: 'white',
-        fontSize: 20,
-    }
+
 })

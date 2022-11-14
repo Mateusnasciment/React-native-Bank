@@ -14,12 +14,19 @@ export function Header() {
         <View style={styles.container}>
             <View  style={styles.content}>
                 <Text style={styles.username}>
-                    Olá, Mateus nascimento
+                    Olá, Mateus !
                 </Text>
-                <TouchableOpacity style={styles.buttonUser}>
-                    <AntDesign name="aliwangwang-o1" size={20} color="white" />
-                        <MaterialCommunityIcons name="email" size={20} color="white" />
-                </TouchableOpacity>
+                <View style={styles.buttonUser} >
+                    <TouchableOpacity >
+                        <AntDesign name="aliwangwang-o1" size={18} color="white" />
+                    </TouchableOpacity>
+                        <TouchableOpacity >
+                            <AntDesign name="github" size={18} color="white" />
+                        </TouchableOpacity>
+                            <TouchableOpacity >
+                                <MaterialCommunityIcons name="email" size={21} color="white" />
+                            </TouchableOpacity>
+                </View>
             </View>
         </View>
     )
@@ -41,15 +48,17 @@ const styles = StyleSheet.create({
         justifyContent: 'space-between',
     },
     username:{
-        fontSize: 20,
+        paddingBottom: 10,
+        fontSize: 28,
         color: '#fff',
         fontWeight: 'bold'
     },
     buttonUser:{
-        justifyContent: 'space-between',
-        flexWrap: 'wrap',
+        display: 'flex',
+        flex: '1',
         flexDirection: 'row',
-        width: 44,
-        height: 44
+        justifyContent: 'space-evenly',
+        width: 14,
+        height: 14
     }
 })
