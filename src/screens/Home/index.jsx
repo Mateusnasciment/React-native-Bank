@@ -22,6 +22,18 @@ const list = [
   {id: 10, value: 500.00, date: "01/12/2022", type: "withdraw"},
   {id: 11, value: 550.00, date: "01/12/2022", type: "deposit"},
   {id: 12, value: 600.00, date: "01/12/2022", type: "withdraw"},
+  {id: 1, value: 100.00, date: "01/12/2022", type: "deposit"},
+  {id: 2, value: 50.00, date: "01/12/2022", type: "withdraw"},
+  {id: 3, value: 150.00, date: "01/12/2022", type: "deposit"},
+  {id: 4, value: 200.00, date: "01/12/2022", type: "withdraw"},
+  {id: 5, value: 250.00, date: "01/12/2022", type: "deposit"},
+  {id: 6, value: 300.00, date: "01/12/2022", type: "withdraw"},
+  {id: 7, value: 350.00, date: "01/12/2022", type: "deposit"},
+  {id: 8, value: 400.00, date: "01/12/2022", type: "withdraw"},
+  {id: 9, value: 450.00, date: "01/12/2022", type: "deposit"},
+  {id: 10, value: 500.00, date: "01/12/2022", type: "withdraw"},
+  {id: 11, value: 550.00, date: "01/12/2022", type: "deposit"},
+  {id: 12, value: 600.00, date: "01/12/2022", type: "withdraw"},
 
 ]
 export function Home() { 
@@ -55,13 +67,13 @@ const styles = StyleSheet.create({
       fontSize: 20,
     },
     list: {
-      height: 150,
+      height: 300,
       gridColumnGap: 10,
       marginLeft: 20,
       marginRight: 20,
-      backgroundColor: '#d3c5e6',
+      backgroundColor: '#ADC5CF',
       padding: 15,
-      borderRadius: 10,
+      borderRadius: 18,
     },
     title:{
       marginBottom: 20,

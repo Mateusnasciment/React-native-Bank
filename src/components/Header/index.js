@@ -33,7 +33,7 @@ export function Header() {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: '#612F74',
+        backgroundColor: '#96ACB7',
         paddingTop: statusBarHeight,
         flexDirection: 'row',
         paddingStart: 10,

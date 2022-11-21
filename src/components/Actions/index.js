@@ -8,7 +8,7 @@ import {
     ScrollView,
 } from 'react-native';
 
-import { AntDesign,FontAwesome5 } from '@expo/vector-icons'
+import { AntDesign,FontAwesome5 } from '@expo/vector-icons';
 import { Styles } from '@expo/config-plugins/build/android';
 
 export function Actions() {
@@ -42,7 +42,10 @@ return (
   );
 }
 const styles=StyleSheet.create ({
+
   container:{
+    fontSize: 20,
+    fontWeight: 'bold',
     padding: 0,
     maxHeight: 84,
     marginRight: 20,
@@ -51,6 +54,7 @@ const styles=StyleSheet.create ({
     backgroundColor: "#fff",
   },
   areButton:{
+    color: '#40376E',
     gap: 16,
     paddingTop: 20,
     display: "flex",
@@ -60,6 +64,7 @@ const styles=StyleSheet.create ({
     marginRight: 30,
   },
   name: {
+    fontFamily: 'Roboto',
     marginRight: 23,
     gap: 16,
     alignItems: 'flex-start',

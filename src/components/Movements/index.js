@@ -47,7 +47,7 @@ const styles=StyleSheet.create({
         marginStart: 20,
         marginRight: 20,
         borderRadius: 10,
-        backgroundColor: '#00FF00',
+        backgroundColor: '#D4E4BC',
     },
     typeWithdraw: {
         paddingStart: 10,
@@ -56,7 +56,7 @@ const styles=StyleSheet.create({
         marginStart: 25,
         marginRight: 20,
         borderRadius: 8,
-        backgroundColor: '#FF0000',
+        backgroundColor: '#805D5D',
     },
 })
 
